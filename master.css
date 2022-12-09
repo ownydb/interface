@@ -1,0 +1,298 @@
+/**--공통--*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Paytone+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #F5F5F4;
+}
+::selection {
+    background-color: #3B2828;
+    color: #ffffff;
+}
+
+/**--index스타일--*/
+.cont_index{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/img_home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home{
+    padding-top: 15px;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+
+/**--home스타일--*/
+
+/**--상단--*/
+
+.home a{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+.home a:link{
+    color: #000000;
+}
+.home a:visited{
+    color: #000000;
+}
+.home a:active{
+    color: #000000;
+}
+.menu_bar{
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 20px;
+}
+.menu_bar a{
+    padding: 10px;
+    display: inline-block;
+}
+.menu_bar a:link{
+    color: #000000;
+}
+.menu_bar a:visited{
+    color: #000000;
+}
+.menu_bar a:hover{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #888888;
+}
+
+/**--cont--*/
+.cont_home{
+    margin: 0 auto;
+    justify-content: center;
+}
+/**--01--*/
+.con01{
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 1000px;
+}
+/**--02--*/
+.con02{
+    margin: 0 auto;
+    padding-top: 230px;
+    width: 700px;
+    height: 100%;
+}
+.con02_text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.con02_video{
+    padding-top: 20px;
+}
+/**--03_a--*/
+.con03{
+    padding-top: 230px;
+}
+.con03 input[id*="slide"] {
+    display: none;
+}
+.con03 .con03_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.con03 .slidelist{
+    white-space: nowrap;
+    font-size: 0;
+}
+.con03 .slidelist > li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .3s;
+}
+.con03 .slidelist > li > a{
+    display: block;
+    position: relative;
+}
+.con03 .slidelist > li > a img{
+    width: 100%;
+}
+.con03 .slidelist label{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.con03 .slidelist .left{
+    left: 30px;
+    background: url('./img/left-arrow.png') center center / 100% no-repeat;
+}
+.con03 .slidelist .right{
+    right: 30px;
+    background: url('./img/right-arrow.png') center center / 100% no-repeat;
+}
+
+.con03 [id="slide01"]:checked ~ .con03_wrap .slidelist > li {transform: translateX(0%);}
+.con03 [id="slide02"]:checked ~ .con03_wrap .slidelist > li {transform: translateX(-100%);}
+.con03 [id="slide03"]:checked ~ .con03_wrap .slidelist > li {transform: translateX(-200%);}
+
+/**--03_b--*/
+.con03_b{
+    margin: 0 auto;
+    padding-top: 330px;
+    padding-bottom: 300px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+/**--more--*/
+.more{
+    padding-top: 130px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 200px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.more a:link{
+    color: #000000;
+}
+.more a:visited{
+    color: #000000;
+}
+/**--하단--*/
+.ft{
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.ft_bar{
+    font-size: 12px;
+    font-weight: 400;
+    word-spacing: 25px;
+}
+.ft_bar a:link{
+    color: #000000;
+}
+.ft_bar a:visited{
+    color: #000000;
+}
+.ft .copy{
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+}
+
+/**--sub_More of their Stories--*/
+.bt_more{
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.cont_sub_00{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.story{
+    padding-top: 70px;
+}
+.story_img{
+    padding-bottom: 80px;
+}
+
+/**--sub_Charles&Ray--*/
+/**--cont--*/
+.cont_sub_01{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.info_img{
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 1100px;
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.info_text01{
+    padding-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+.info_text02{
+    margin: 0 auto;
+    width: 1000px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 40px;
+    text-align: center;
+}
+.info_text02 b{
+    color: #3B2828;
+}
+
+/**--sub_Works--*/
+/**--cont01--*/
+.story_bt{
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.story_bt img{
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
